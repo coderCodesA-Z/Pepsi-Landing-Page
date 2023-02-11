@@ -1,0 +1,345 @@
+/* Poppins Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', 'Questrial', sans-serif;
+}
+
+:root {
+    --cursor: url(img/cursor.png), auto;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: #22559e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    position: relative;
+    width: 60%;
+    height: 70%;
+    background: linear-gradient(100deg, #153777, #2765b2);
+    box-shadow: 18px 22px 30px -1px rgba(0, 0, 0, 0.3);
+    padding: 0 30px;
+}
+
+header nav {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li a {
+    display: inline-block;
+    padding: 4px 10px;
+    text-decoration: none;
+    font-size: .95rem;
+    font-weight: 500;
+    color: rgba(238, 238, 238, .85);
+    transition: .3s linear;
+    cursor: var(--cursor);
+}
+
+header nav ul li:hover a {
+    color: #fff;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+header nav .buy_nav_btn {
+    text-decoration: none;
+    color: rgba(238, 238, 238, .97);
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 5px 20px;
+    border: 2px solid rgba(238, 238, 238, .85);
+    border-radius: 20px;
+    cursor: var(--cursor);
+    transition: .3s linear;
+}
+
+header nav .buy_nav_btn:hover {
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+header section {
+    width: 100%;
+    height: 85%;
+    /* border: 1px solid white; */
+    display: flex;
+}
+
+header section .left-cont,
+.right-cont {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    /* border: 1px solid white; */
+}
+
+.right-cont {
+    width: 40%;
+}
+
+header section .left-cont {
+    padding: 40px 0 0 70px;
+}
+
+header section .left-cont #left-cont-btn {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    color: #fff;
+    cursor: var(--cursor);
+    font-size: 1.2rem;
+    transition: .3s linear;
+}
+
+header section .left-cont #left-cont-btn:hover {
+    color: #2d71c0;
+}
+
+header section .left-cont .content {
+    /* border: 1px solid white; */
+    color: #fff;
+}
+
+header section .left-cont .content h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+header section .left-cont .content p:nth-child(2) {
+    font-size: .95rem;
+    color: rgba(255, 255, 255, .45);
+}
+
+header section .left-cont .content h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+
+header section .left-cont .content .nutrition-box {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+header section .left-cont .content .nutrition-box .card {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    background-color: rgba(45, 113, 192, .5);
+    margin-right: 5px;
+}
+
+header section .left-cont .content .nutrition-box .card:first-child {
+    background-color: rgb(45, 113, 192);
+}
+
+header section .left-cont .content .nutrition-box .card p {
+    font-size: .65rem;
+    text-align: center;
+    color: rgb(255, 255, 255, .7);
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+header section .left-cont .content .nutrition-box .card:first-child p {
+    margin-top: 2px;
+}
+
+header section .left-cont .content .nutrition-box .card h3 {
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2px;
+}
+
+header section .left-cont .content .nutrition-box .card h6 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    background: rgb(56, 126, 206, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .7rem;
+}
+
+header section .left-cont .content .nutrition-box .card:first-child h6 {
+    background: rgb(59 131 214);
+    margin-top: 4PX;
+}
+
+header section .left-cont .content p:nth-child(5) {
+    font-size: .95rem;
+    color: rgba(255, 255, 255, .45);
+    margin-top: 8px;
+}
+
+header section .left-cont .content button {
+    margin-top: 25px;
+    padding: 7px 40px;
+    color: rgba(238, 238, 238, .97);
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid rgba(238, 238, 238, .85);
+    border-radius: 25px;
+    cursor: var(--cursor);
+    transition: .3s linear;
+    background-color: transparent;
+}
+
+header section .left-cont .content button:hover {
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+header section .left-cont .content .item-box {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #fff; */
+    margin-top: 24px;
+}
+
+header section .left-cont .content .item-box .card_pepsi {
+    width: 40px;
+    /* border: 1px solid #fff; */
+    margin-right: 30px;
+    overflow: hidden;
+    cursor: var(--cursor);
+    z-index: 1;
+}
+
+header section .left-cont .content .item-box .card_pepsi img {
+    width: 100%;
+    transition: .3s linear;
+}
+
+header section .left-cont .content .item-box .card_pepsi h6 {
+    width: 100%;
+    text-align: center;
+    color: #2c6cbb;
+    font-size: .85rem;
+    transition: .3s linear;
+}
+
+header section .left-cont .content .item-box .card_pepsi:hover h6 {
+    color: #fff;
+}
+
+header section .right-cont .right-cont-btn {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+header section .right-cont .right-cont-btn span {
+    font-size: .85rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255, .5);
+    margin-right: 7px;
+}
+
+header section .right-cont .right-cont-btn .bi {
+    font-size: 1.2rem;
+    cursor: var(--cursor);
+    transition: .3s linear;
+    color: #fff;
+}
+
+header section .right-cont .right-cont-btn .bi:hover {
+    color: #2d71c0;
+}
+
+header section .right-cont img {
+    width: 430px;
+    margin: 20px 0 0 -180px;
+}
+
+header section .right-cont .level {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 30px;
+    height: 45%;
+    /* border: 1px solid #fff; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header section .right-cont .level h6 {
+    width: 10px;
+    height: 2px;
+    background: rgb(255, 255, 255, .4);
+    margin-top: 13px;
+}
+
+header section .right-cont .level h6:nth-child(3) {
+    width: 20px;
+    background: #fff;
+}
+
+header .ml-box {
+    position: absolute;
+    width: 130px;
+    height: 170px;
+    background: rgb(44, 138, 245);
+    bottom: 0;
+    right: 0;
+    color: white;
+    padding: 20px 0px 0px 20px;
+}
+
+header .ml-box h3 {
+    font-size: 17px;
+}
+
+header .ml-box p {
+    font-size: 13px;
+}
+
+header .ml-box h6 {
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+header .ml-box h5 {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background: #196bd0;
+    bottom: 0;
+    left: 0;
+}
