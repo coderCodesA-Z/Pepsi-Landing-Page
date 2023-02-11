@@ -129,9 +129,17 @@ Array.from(document.getElementsByClassName("card_pepsi")).forEach((el, idx) => {
 Array.from(document.getElementsByClassName("card_pepsi")).forEach((el, idx) => {
 	el.addEventListener("click", () => {
 		idx2 = idx;
-		Array.from(document.getElementsByClassName("card_pepsi")).forEach(el => {
-            
-        })
+		Array.from(document.getElementsByClassName("card_pepsi")).forEach(
+			(el, idx3) => {
+				document.getElementsByClassName("pepsi-hover-img")[idx3].src =
+					pepsi[idx3].poster2;
+
+				document.getElementsByClassName("pepsi-hover-title")[
+					idx3
+				].style.color = "#2c6cbb";
+                console.log
+			}
+		);
 
 		document.getElementsByClassName("pepsi-hover-img")[idx].src =
 			pepsi[idx].poster1;
